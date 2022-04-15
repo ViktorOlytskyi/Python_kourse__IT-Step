@@ -1,0 +1,30 @@
+li {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+ul {
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+  }  
+span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.red_cross {
+    color: rgb(192, 35, 35);
+    font-weight:bold;
+}
+.blue {
+    background-color: rgb(131, 185, 221);
+}
+.light_blue {
+    background-color: rgb(175, 220, 250);
+}
+.gray {
+    background-color: rgb(214, 209, 209);
+    /* text-decoration: line-through; */
+}
