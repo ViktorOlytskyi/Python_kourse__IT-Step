@@ -1,0 +1,30 @@
+
+.Headers {
+    text-align: center;
+}
+hr {
+    align-self: center;
+    /* width: 1700px; */
+    size: 2px;
+    color: hsl(0, 0%, 75%);    
+}
+code {
+    color: red;
+    background-color: #ebebeb;
+}
+.codearea {
+   
+    background-color: #ebebeb;
+}
+ul {
+    padding: 0;
+}
+li {
+    color: rgba(0, 185, 185, 0.925);
+    background-color: #ebebeb;
+    display: inline;
+}
+.text {
+    color: black;
+    background-color: white;
+}

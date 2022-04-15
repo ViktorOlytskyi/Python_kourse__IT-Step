@@ -1,0 +1,17 @@
+.cardred
+{ 
+	background-color:#d6d6d6; 
+	color: #b00b0b;
+	font-size: 40px;
+	padding: 0 10px;
+	margin: 0 3px
+}
+.cardblack
+{
+background-color:#d6d6d6; 
+	color: #000;
+	font-size: 40px;
+	padding: 0 10px;
+	margin: 0 3px
+
+}
