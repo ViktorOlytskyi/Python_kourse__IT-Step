@@ -1,0 +1,16 @@
+
+.main {
+    background-color: rgb(203, 211, 211);
+    padding: 5px;
+         
+}
+li {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+   }
+
+li span {
+    color: navy; 
+    font-style: normal;
+    font-weight: normal;
+   }

@@ -1,0 +1,25 @@
+div {
+    background-color: rgb(211, 226, 226);
+}
+.inside {
+    color: white;
+    background-color: rgb(10, 126, 110);
+  
+}
+.name {
+    background-color: rgb(8, 99, 64);
+    padding-top: 7px;
+    padding-bottom: 7px;
+  
+}
+p {
+    padding: 20px;
+    margin-top: 0px;
+}
+span {
+    padding-left: 40px;
+}
+.bottop {
+    padding-left: 0px;
+    padding-top: 0px;
+}

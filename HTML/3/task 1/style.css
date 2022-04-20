@@ -1,0 +1,17 @@
+.seasons {
+    list-style-type: symbols(cyclic ">");
+}
+.winter {
+    list-style-image: url("winter_16.png");
+}
+.spring {
+    list-style-image: url("spring_16.png");
+}
+
+.summer {
+    list-style-image: url("summer_16.png");
+}
+
+.autumn {
+    list-style-image: url("autumn_16.png");
+}
