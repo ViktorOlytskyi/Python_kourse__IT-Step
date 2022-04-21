@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(220, 228, 228);
+}
+
+.header {
+    background-color: rgb(139, 2, 78);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu {
+    background-color: rgb(90, 1, 50);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 8px;
+}
+
+
+.article {
+    background-color: rgb(196, 99, 152);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    margin-top: 8px;
+    margin-left: 8px;
+    display:inline-block;
+    width: 1510px;
+}
+.section {
+    background-color: rgb(224, 174, 203);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    margin-top: 8px;
+    
+}
+.text_aside {
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.aside1 {
+    background-color: rgb(196, 99, 152);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 60px;
+    margin-top: 8px;
+    float: inline-start;
+}
+.aside2 {
+    background-color: rgb(196, 99, 152);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 60px;
+    margin-top: 8px;
+}
+.aside3 {
+    background-color: rgb(196, 99, 152);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 60px;
+    margin-top: 8px;
+    margin-left: 8px;
+    float: right;
+    height: 134px;
+}
+.foter {
+
+    background-color: rgb(90, 1, 50);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 8px;
+    
+}
+
+.text {
+    color: white;
+}

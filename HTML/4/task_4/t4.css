@@ -1,0 +1,87 @@
+footer {
+    background-color: rgb(48, 71, 173);
+    
+}
+.main {
+    padding-top: 20px;
+}
+
+.bottom {
+    height: 50px;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.text {
+    
+    margin-top: 15px;
+    color: white;
+}
+
+.link {
+   
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.74);
+}
+.link:hover {
+    text-decoration: solid;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    
+}
+li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    
+}
+.column3 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+a.ico_item1 {
+    background: url("../image/fb_gray.png") no-repeat; /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 65px; /* Ширина рисунка */
+    height: 65px; /*  Высота рисунка */
+    margin-right: 30px;
+   }
+a.ico_item1:hover {
+    background-image: url("../image/fb.png");
+}
+a.ico_item3 {
+    background: url("../image/youtube_gray.png") no-repeat; /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 65px; /* Ширина рисунка */
+    height: 65px; /*  Высота рисунка */
+    
+    
+   }
+a.ico_item3:hover {
+    background-image: url("../image/youtube.png");
+}
+a.ico_item2 {
+    background: url("../image/insta_gray.png") no-repeat; /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    width: 65px; /* Ширина рисунка */
+    height: 65px; /*  Высота рисунка */
+    margin-right: 30px;
+   }
+a.ico_item2:hover {
+    background-image: url("../image/insta.png");
+}
