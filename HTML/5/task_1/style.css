@@ -1,0 +1,56 @@
+body {
+    background-color: rgba(223, 238, 238, 0.877);
+}
+
+table {
+    /* width: 100%; */
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: large;
+}
+
+
+thead {
+    position: sticky;
+    top: 0;
+   
+}
+.column1 {
+    position: sticky;
+    left: 0;
+}
+
+
+
+.table-all tr:nth-child(2n) {
+    background-color: #E7E9EB;
+}
+
+.table-all tr:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+.column1 {
+    background-color: rgb(154, 206, 236);
+    font-weight: bold;
+}
+
+.row1 {
+    background-color: rgb(154, 206, 236);
+
+}
+
+td {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+th {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
