@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home work 1</title>
+</head>
+
+<body>
+
+    <script>
+        //task 1
+            //Запросите у пользователя число, возведите это число во
+            // 2-ю степень и выведите на экран.
+            var a = prompt("enter number please: ");
+            alert("result=" + (a ** 2));
+        //task 2
+            //  Запросите у пользователя 2 числа и выведите среднее ариф-
+            // метическое этих чисел.      
+            var b = prompt("enter 1-t number please: ");
+            var c = prompt("enter 2-d number please: ");
+            alert("average is=" + (Number(b) + Number(c)) / (2));
+        //task 3
+            // Запросите у пользователя длину стороны квадрата и вы-
+            // ведите площадь такого квадрата.
+            var d = prompt("enter side length of a square please: ");
+            alert("square area is=" + (d ** 2));
+        //task 4
+            // Реализуйте конвертор из километров в мили (пользователь
+            // вводит километры, программа выводит мили). 1 км = 0,621371
+            // миль. Это значение укажите в коде как константу.
+            const k = 0.621371;
+            var i = prompt("enter kilometers please: ");
+            alert(i + " kilometer(s) is=" + (Number(i) * Number(k)) + " miles");
+        //task 5
+            // Реализуйте калькулятор. Пользователь вводит два числа,
+            // а программа выводит результаты действий + - * / между
+            // этими числами.
+            var bb = prompt("enter 1-t number please: ");
+            var cc = prompt("enter 2-d number please: ");
+            var res1 = Number(bb) + Number(cc);
+            var res2 = Number(bb) - Number(cc);
+            var res3 = Number(bb) * Number(cc);
+            var res4 = Number(bb) / Number(cc);
+            alert(bb + "+" + cc + "=" + res1);
+            alert(bb + "-" + cc + "=" + res2);
+            alert(bb + "*" + cc + "=" + res3);
+            alert(bb + "/" + cc + "=" + res4);
+        //task 6
+            // Пользователь вводит значения a и b для формулы a *x + b = 0,
+            // а программа считает и выводит значение x.
+            var a1 = prompt("enter 1-t number a: ");
+            var b1 = prompt("enter 2-d number b: ");
+
+            var x = Number(-b1) / Number(a1);
+            alert("result x=" + x);
+        //task 7
+            // Запросите у пользователя текущее время (часы и минуты)
+            // и выведите, сколько часов и минут осталось до следующего
+            // дня.
+            var t1 = prompt("enter hours: ");
+            var t2 = prompt("enter minutes: ");
+            t1 = 24 - t1;
+            t2 = 60 - t2;
+            alert("left until the next day: " + t1 + " hours and " + t2 + " minutes");
+        //task 8
+            // Запросите у пользователя трехзначное число и выведите
+            // вторую цифру этого числа. Для решения задачи используйте
+            // оператор % (остаток от деления).
+            var number = prompt("enter three-digit number: ");
+            var res2 = number % 100;
+            var answ = (res2 - res2 % 10) / 10;
+            alert("the second number of " + number + " is: " + answ);
+        //task 9
+            // Запросите у пользователя пятизначное число и переме-
+            // стите последнюю цифру в начало (из числа 12345 должно
+            // получиться число 51234).
+            var num1 = prompt("enter five-digit number: ");
+            var num2 = num1 % 10;
+            var num3 = num1 - num2;
+            num3 /= 10;
+            alert("Result is: " + num2 + num3);
+        //task 10
+            // Зарплата работника составляет $250 + 10% от продаж.
+            // Запросите общую сумму продаж за месяц и посчитайте
+            // зарплату.
+            let num8 = prompt("Enter total monthly sales: ");
+            alert("The salary = " + Number(num8 / 100 * 10 + 250));
+    </script>
+</body>
+
+</html>
