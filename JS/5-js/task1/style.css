@@ -1,0 +1,17 @@
+.inptext{
+    height: 70px;
+    width: 300px;
+    background-color: #FBF2E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t1 {
+    display:flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+#task1{
+    margin-top: 10px;
+}
