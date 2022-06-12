@@ -1,0 +1,66 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 450px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color:darkseagreen;
+}
+label {
+    font-weight: bold;
+}
+.btn {
+    width: 250px;
+}
+#сode{
+    width: 200px;
+}
+#сolor {
+    width: 200px;
+}
+#sel {
+    width: 205px;
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.palette-element {
+    display: flex;
+    margin: 10px;
+    width: 180px;
+    height: 100px;
+}
+
+.palette-element__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    background: rgb(255, 255, 253);
+    width: 110px;
+    height: 60px;
+    opacity: 0.5;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.check {
+    font-size: 15px;
+    color: red;
+    text-align: right;
+}
