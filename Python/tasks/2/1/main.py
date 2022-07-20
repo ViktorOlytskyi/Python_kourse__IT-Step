@@ -9,7 +9,7 @@
 try:
     num_of_orders = int(input("Hello! How many orders do you want to make? \n"))
 except:
-    print("Error, try again please!\n You can input only numbers\r")
+    print("Error, try again please!\n You can input only numbers\n")
 
 americano = 20
 espresso = 15
