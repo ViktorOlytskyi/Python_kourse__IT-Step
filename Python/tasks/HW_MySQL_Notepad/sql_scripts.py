@@ -1,6 +1,6 @@
 DB_HOST = "localhost"
 DB_USER = 'root'
-DB_PASSWORD = '!Wot199123'
+DB_PASSWORD = 'Тут має бути пароль від вашого сервера'
 DB_NAME = 'HW_NOTEPAD'
 
 CREATE_DB = "CREATE DATABASE IF NOT EXISTS `HW_NOTEPAD`"
