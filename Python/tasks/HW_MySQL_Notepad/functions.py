@@ -161,7 +161,7 @@ def delete_note_from_DB(id, user_id):
         return False
         print(error)
 
-def is_note_exists_in_DB(note_id):
+def is_note_exists_in_DB(note_id, user):
     try:
         with connect(
                 host=DB_HOST,
@@ -170,13 +170,12 @@ def is_note_exists_in_DB(note_id):
                 database=DB_NAME
         ) as coon:
             with coon.cursor() as cur:
-                cur.execute(IS_NOTE_EXISTS.format(note_id))
+                cur.execute(IS_NOTE_EXISTS.format(note_id, user))
                 if cur.fetchall()[0][0] > 0:
                     return True
                 else:
                     return False
     except Error as error:
-        return False
         print(error)
 
 def update_note_DB(new_note, note_id, user_id):
@@ -197,7 +196,7 @@ def update_note_DB(new_note, note_id, user_id):
         return False
         print(error)
 
-def select_note_by_id(note_id):
+def select_note_by_id(note_id, user):
     try:
         with connect(
                 host=DB_HOST,
@@ -206,7 +205,7 @@ def select_note_by_id(note_id):
                 database=DB_NAME
         ) as coon:
             with coon.cursor() as cur:
-                cur.execute(SELECT_NOTE_BY_ID.format(note_id))
+                cur.execute(SELECT_NOTE_BY_ID.format(note_id, user))
 
                 return cur.fetchall()[0]
 
@@ -215,7 +214,7 @@ def select_note_by_id(note_id):
         return False
         print(error)
 
-def select_all_notes():
+def select_all_notes(user_id):
     try:
         with connect(
                 host=DB_HOST,
@@ -224,14 +223,14 @@ def select_all_notes():
                 database=DB_NAME
         ) as coon:
             with coon.cursor() as cur:
-                cur.execute(SELECT_ALL_NOTES)
+                cur.execute(SELECT_ALL_NOTES.format(user_id))
                 return cur.fetchall()
 
     except Error as error:
         return False
         print(error)
 
-def select_all_notes_by_date(first_date, second_date):
+def select_all_notes_by_date(first_date, second_date, user):
     try:
         with connect(
                 host=DB_HOST,
@@ -240,13 +239,13 @@ def select_all_notes_by_date(first_date, second_date):
                 database=DB_NAME
         ) as coon:
             with coon.cursor() as cur:
-                cur.execute(SELECT_ALL_NOTES_BY_DATE.format(first_date, second_date))
+                cur.execute(SELECT_ALL_NOTES_BY_DATE.format(first_date, second_date, user))
                 return cur.fetchall()
 
     except Error as error:
         print(error)
 
-def select_all_notes_by_word(word):
+def select_all_notes_by_word(word, user):
     try:
         with connect(
                 host=DB_HOST,
@@ -255,7 +254,7 @@ def select_all_notes_by_word(word):
                 database=DB_NAME
         ) as coon:
             with coon.cursor() as cur:
-                cur.execute(SELECT_ALL_BY_INCLUDE_WORD.format(word))
+                cur.execute(SELECT_ALL_BY_INCLUDE_WORD.format(word, user))
                 return cur.fetchall()
 
     except Error as error:

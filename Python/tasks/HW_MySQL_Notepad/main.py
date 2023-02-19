@@ -49,7 +49,7 @@ while True:
                     print("Delete error, please check entered information, and try again!")
             elif c == '3':
                 note_id = input("please, input note id to change it ")
-                if is_note_exists_in_DB(note_id):
+                if is_note_exists_in_DB(note_id, user.get_id()):
                     changed_note = input("please, input your new note ")
                     update_note_DB(changed_note,note_id, user.get_id())
                     print(f"Your note with id {note_id} was successful updated!")
@@ -57,15 +57,15 @@ while True:
                     print(f"There is no one note with id {note_id}, please try again!")
             elif c == '4':
                 note_id_view = input("please, input note id to view it ")
-                if is_note_exists_in_DB(note_id_view):
-                    note_DB = select_note_by_id(note_id_view)
+                if is_note_exists_in_DB(note_id_view, user.get_id()):
+                    note_DB = select_note_by_id(note_id_view, user.get_id())
                     note = Note(note_DB[0],note_DB[1],note_DB[2], note_DB[3])
                     print(note)
                 else:
                     print(f"There is no one note with id {note_id_view}, please try again!")
             elif c == '5':
                 print("There is your all notes:")
-                notes_DB = select_all_notes()
+                notes_DB = select_all_notes(user.get_id())
                 for n in notes_DB:
                     note_fr_DB = Note(n[0], n[1], n[2], n[3])
                     print(note_fr_DB)
@@ -85,7 +85,7 @@ while True:
                         break
                     else:
                         print("Wrong data input, please try again!\n")
-                notes_DB_by_date = select_all_notes_by_date(sdate,fdate)
+                notes_DB_by_date = select_all_notes_by_date(sdate,fdate, user.get_id())
                 if len(notes_DB_by_date) > 0:
                     for n in notes_DB_by_date:
                         note_fr_DB = Note(n[0], n[1], n[2], n[3])
@@ -95,7 +95,7 @@ while True:
 
             elif c == '7':
                 word = input("Please input word to search ")
-                notes = select_all_notes_by_word(word)
+                notes = select_all_notes_by_word(word, user.get_id())
                 if len(notes) > 0:
                     for n in notes:
                         note_fr_DB = Note(n[0], n[1], n[2], n[3])
@@ -125,6 +125,6 @@ while True:
                 break
         pr = input("please input your new password ")
         add_new_user_to_DB(name, surname, lr, pr)
-        break
+
     else:
         print("input error, try again")
