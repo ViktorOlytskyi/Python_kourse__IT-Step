@@ -1,0 +1,107 @@
+body {
+    background-color: rgba(230, 230, 230, 0.979);
+   
+}
+.menu {
+    background-image: url(/static/img/header.webp);
+    width: 75vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    border-radius: 8px;
+    
+}
+.menu-item {
+    justify-content: center;
+    padding-bottom: 5vh;
+    font-size: large;
+    
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: tomato;
+}
+
+a:hover {
+    color: #A45D93;
+    transition: 1s;
+}
+
+.hist_container {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.inf_container {
+    background-color: aliceblue;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . ."
+      ". . . ."; 
+    padding-left: 2vh;
+    padding-bottom: 2vh;
+}
+
+.h5_history {
+    color: darkblue;
+    font-weight: bold;
+}
+h1 {
+    color: rgb(137, 137, 207);
+    border-bottom: solid;
+}
+
+.img_container {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text_h_container {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.text_h_content {
+    width: 41vw;
+}
+
+.link_people {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:1000;
+    font-size: large;
+    color: rgb(41, 128, 143);
+}
+.cnt {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cnt2 {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sp {padding-left: 1vh;}
