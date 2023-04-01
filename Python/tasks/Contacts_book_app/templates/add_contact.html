@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="error">
+        <h3>
+            {{ message }}
+        </h3>
+    </div>
+    <div class="form_add_container">
+        <div class="form_add">
+            <form method="post">
+                <label for="">Введіть ім'я:</label>
+                <input type="text" name="first_name" placeholder="Ім'я">
+                <label for="">Введіть прізвище:</label>
+                <input type="text" name="last_name" placeholder="Прізвище">
+                <label for="">Введіть email:</label>
+                <input type="email" name="email" placeholder="Email">
+                <label for="">Введіть телефон:</label>
+                <input type="tel" name="phone_number" placeholder="Телефон">
+                <label for="">Введіть нотатку:</label>
+                <input type="text" name="notes" placeholder="Нотатка">
+                <input type="submit" value="відправити" class="sbm">
+        
+            </form>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_bar_container">
+            <div class=item>
+                <a href="/add_contact">Додати контакт</a>
+            </div>
+            <div class=item>
+                <a href="/edit_contact">Рудагувати контакт</a>
+            </div>
+            <div class=item>
+                <a href="/del">Видалити контакт</a>
+            </div> 
+            
+        </div>
+    </nav>
+
+    <div class="search_container">
+        <div class="s_item">
+            <p>Введіть прізвище або ім'я для пошуку контакту:</p>
+        </div>
+        <div class="s_item">
+            <form action="" method="post">
+                <input class="search_class" type="search" name="search_field">
+                <input type="submit" value="ПОШУК">
+            </form>
+        </div>
+        
+
+    </div>
+
+    <div class="main_container">
+
+
+
+        <div class="error">
+            <h3>
+                {{ message }}
+            </h3>
+        </div>
+        <h1>Телефонна книга</h1>
+    
+    <table>
+        <tr>
+            <th>id</th>
+            <th>Ім'я</th>
+            <th>Прізвище</th>
+            <th>Email</th>
+            <th>Телефон</th>
+            <th>Нотатка</th>
+        </tr>
+        {% for contact in contacts %}
+        <tr>
+            <td>{{ contact.id }}</td>
+            <td>{{ contact.first_name }}</td>
+            <td>{{ contact.last_name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.phone_number }}</td>
+            <td>{{ contact.notes }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    
+    </div>
+    
+</body>
+
+</html>

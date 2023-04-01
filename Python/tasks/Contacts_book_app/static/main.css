@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(164, 193, 255);
+       
+}
+
+.main_container {
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.nav_bar_container {
+    width: 70vw;
+    height: 5vh;
+    background-color: rgb(80, 135, 252);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+a {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration:none;
+    
+}
+
+
+table, th, td {
+    border: 1px solid;
+  }
+.form_add_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.form_add {
+    width: 10vw;
+}
+
+.sbm {
+    margin-top: 2vh;
+    
+}
+
+.error {
+    color: brown;
+    font-weight: bold;
+    width: 98vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+
+}
+.check_list {
+    margin-top: 2vh;
+}
+.check_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inp_new_data {
+    margin-top: 3vh;
+}
+
+.search_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3vh;
+
+}
+
+.search_class {
+    width: 50vw;
+    height: 3vh;
+}
